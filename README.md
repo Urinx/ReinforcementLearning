@@ -22,13 +22,13 @@ Reinforcing Your Learning of Reinforcement Learning.
 
 **Tic Tac Toe**
 <div align=center>
-	<img width="100" height="100" src="imgs/tic1.png" alt="Tic Tac Toe">
-	<img width="100" height="100" src="imgs/tic2.png" alt="Tic Tac Toe">
-	<img width="100" height="100" src="imgs/tic3.png" alt="Tic Tac Toe">
-	<img width="100" height="100" src="imgs/tic4.png" alt="Tic Tac Toe">
-	<img width="100" height="100" src="imgs/tic5.png" alt="Tic Tac Toe">
-	<img width="100" height="100" src="imgs/tic6.png" alt="Tic Tac Toe">
-	<img width="100" height="100" src="imgs/tic7.png" alt="Tic Tac Toe">
+	<img width="100" height="130" src="imgs/tic1.png" alt="Tic Tac Toe">
+	<img width="100" height="130" src="imgs/tic2.png" alt="Tic Tac Toe">
+	<img width="100" height="130" src="imgs/tic3.png" alt="Tic Tac Toe">
+	<img width="100" height="130" src="imgs/tic4.png" alt="Tic Tac Toe">
+	<img width="100" height="130" src="imgs/tic5.png" alt="Tic Tac Toe">
+	<img width="100" height="130" src="imgs/tic6.png" alt="Tic Tac Toe">
+	<img width="100" height="130" src="imgs/tic7.png" alt="Tic Tac Toe">
 </div>
 
 基于 `Q-Learning` 玩井字棋游戏：[[code]](QLearning/QLearning_TicTacToe.py)
@@ -154,8 +154,8 @@ Max reward so far: 111837.0
 这个是我通过阅读 AlphaGo Zero 的文献，以及结合网路上相关的一些文章，将这些内容通过自己的理解整合到这一个PPT中，用来在组会上简单的介绍 AlphaGo Zero 背后的方法和原理给同学和老师，同时也思考如何将其结合到其他领域。当然，其中也不仅仅包括 AlphaGo Zero 的内容，也有我最近看的另外一篇文章，他们的研究团队运用类似的方法来解魔方。[[pdf]](AlphaGoZero_Intruduction/alphago_zero_introduction.pdf)
 
 <div align=center>
-	<img width="400" height="300" src="imgs/pdf_2.png" alt="pdf">
-	<img width="400" height="300" src="imgs/pdf_3.png" alt="pdf">
+	<img width="420" height="315" src="imgs/pdf_2.png" alt="pdf">
+	<img width="420" height="315" src="imgs/pdf_3.png" alt="pdf">
 </div>
 
 [0]. [AlphaGo Zero - How and Why it Works](http://tim.hibal.org/blog/alpha-zero-how-and-why-it-works/)<br/>
