@@ -74,8 +74,6 @@ class Residual_CNN(NetworkModel):
         self.momentum = 0.9
         self.reg_const = 0.0001
 
-        self.batch_size = 20
-        self.epochs = 1
         self.verbose = True
 
         self.model = self.build_model()
@@ -112,10 +110,8 @@ class Residual_CNN(NetworkModel):
 
         model = Model(inputs=main_input, outputs=[vh, ph])
         model.compile(
-            loss={'value_head': 'mean_squared_error','policy_head': self.softmax_cross_entropy_with_logits},
-            # loss={'value_head': 'mean_squared_error','policy_head': 'categorical_crossentropy'},
-            optimizer=SGD(lr=self.learning_rate, momentum=self.momentum),
-            loss_weights={'value_head': 0.5, 'policy_head': 0.5}
+        	loss=['mean_squared_error', 'categorical_crossentropy']，
+            optimizer=SGD(lr=self.learning_rate, momentum=self.momentum)
             )
 
         return model
@@ -183,19 +179,6 @@ class Residual_CNN(NetworkModel):
             )(x)
         return x
 
-
-    def softmax_cross_entropy_with_logits(self, y_true, y_pred):
-        p = y_pred
-        pi = y_true
-
-        zero = tf.zeros(tf.shape(pi), tf.float32)
-        where = tf.equal(pi, zero)
-
-        negatives = tf.fill(tf.shape(pi), -100.0)
-        p = tf.where(where, negatives, p)
-
-        loss = tf.nn.softmax_cross_entropy_with_logits_v2(labels=pi, logits=p)
-        return loss
 
 class Simple_CNN(NetworkModel):
     def __init__(self, input_dim, output_dim):
