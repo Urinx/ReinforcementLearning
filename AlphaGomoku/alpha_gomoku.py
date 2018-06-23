@@ -19,8 +19,8 @@ policy_network = Simple_CNN # or Residual_CNN
 #======================
 # 19x19
 # game_board_width = 19
-# mcts_playout_itermax_train = 1000
-# mcts_playout_itermax_play = 2000
+# mcts_playout_itermax_train = 800
+# mcts_playout_itermax_play = 1000
 # model_file = 'Simple_CNN_19x19_3000'
 # policy_network = Simple_CNN
 #======================
