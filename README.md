@@ -93,7 +93,6 @@ Taxi v2
 	<img width="93" height="133" src="imgs/taxi4.png" alt="Taxi v2">
 	<img width="93" height="133" src="imgs/taxi5.png" alt="Taxi v2">
 	<img width="93" height="133" src="imgs/taxi6.png" alt="Taxi v2">
-	<img width="93" height="133" src="imgs/taxi7.png" alt="Taxi v2">
 </div>
 
 基于 `Q-Learning` 玩 `Taxi v2` 游戏：[[code]](QLearning/QLearning_Taxi_v2.py)
