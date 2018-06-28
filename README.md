@@ -1,4 +1,6 @@
-# Reinforcement Learning
+Reinforcement Learning
+======================
+
 Reinforcing Your Learning of Reinforcement Learning.
 
 这个是我在学习强化学习的过程中的一些记录，以及写的一些代码。建立这个Github项目主要是可以和大家一起相互学习和交流，也同时方便其他人寻找强化学习方面的资料。我为什么学习强化学习，主要是想把 AlphaZero 的那套方法（结合深度学习的蒙特卡洛树搜索）用在 RNA 分子结构预测上，但是具体怎么落地现在我也不知道。
@@ -7,12 +9,37 @@ Reinforcing Your Learning of Reinforcement Learning.
 
 看书的同时，也根据网上的一些文章写一些简单的代码，依次如下。
 
-## Q-Learning
+
+Table of contents
+=================
+
+* [Q-Learning](#q-Learning)
+	* [Frozen Lake Game](#frozen-lake-game)
+	* [Tic Tac Toe](#tic-tac-toe)
+	* [Taxi v2](#taxi-v2)
+* [Deep Q-Learning Network](#deep-q-Learning-network)
+	* [Doom Game](#doom-game)
+	* [Atari Space Invaders](#atari-space-invaders)
+* [Policy Gradients](#policy-gradients)
+	* [CartPole Game](#cartPole-game)
+	* [Doom Deathmatch](#doom-deathmatch)
+* [Advantage Actor Critic (A2C)](#advantage-actor-critic)
+* [Asynchronous Advantage Actor Critic (A3C)](#asynchronous-advantage-actor-critic)
+* [Proximal Policy Optimization (PPO)](#proximal-policy-optimization)
+* [AlphaGoZero Introduction](#alphagozero-introduction)
+* [Monte Carlo Tree Search](#monte-carlo-tree-search)
+	* [Gomoku](#gomoku)
+* [AlphaGomoku](#alphagomoku)
+
+
+Q-Learning
+==========
 
 **Bellman equation:**
 ![Bellman equation](imgs/Bellman_equation.png)
 
-**Frozen Lake Game**
+Frozen Lake Game
+----------------
 
 <div align=center>
 	<img width="300" height="300" src="imgs/frozenlake.png" alt="Frozen Lake Game">
@@ -20,7 +47,10 @@ Reinforcing Your Learning of Reinforcement Learning.
 
 基于 `Q-Learning` 玩 Frozen Lake 游戏：[[code]](QLearning/QLearning_FrozenLake.py)
 
-**Tic Tac Toe**
+
+Tic Tac Toe
+-----------
+
 <div align=center>
 	<img width="100" height="130" src="imgs/tic1.png" alt="Tic Tac Toe">
 	<img width="100" height="130" src="imgs/tic2.png" alt="Tic Tac Toe">
@@ -52,10 +82,20 @@ players draw rate: 0.09528
 ====================
 ```
 
-[0]. [Diving deeper into Reinforcement Learning with Q-Learning](https://medium.freecodecamp.org/diving-deeper-into-reinforcement-learning-with-q-learning-c18d0db58efe)<br/>
-[1]. [Q* Learning with FrozenLake - Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Q%20learning/Q%20Learning%20with%20FrozenLake.ipynb)
 
-## Deep Q-Learning Network
+Taxi v2
+-------
+[to be done]
+
+
+
+[0]. [Diving deeper into Reinforcement Learning with Q-Learning](https://medium.freecodecamp.org/diving-deeper-into-reinforcement-learning-with-q-learning-c18d0db58efe)<br/>
+[1]. [Q* Learning with FrozenLake - Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Q%20learning/Q%20Learning%20with%20FrozenLake.ipynb)<br/>
+[2]. [Q* Learning with OpenAI Taxi-v2 - Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Q%20learning/Taxi-v2/Q%20Learning%20with%20OpenAI%20Taxi-v2%20video%20version.ipynb)
+
+Deep Q-Learning Network
+=======================
+
 <div align=center>
 	<img width="400" height="300" src="imgs/DQN.png" alt="Deep Q-Learning Network">
 </div>
@@ -64,7 +104,8 @@ players draw rate: 0.09528
 
 ![](imgs/DQN_loss.png)
 
-**Play Doom Game**
+Doom Game
+---------
 
 <div align=center>
 	<img src="imgs/play_doom.gif" alt="play Doom">
@@ -92,16 +133,26 @@ Episode 9 Score: 61.0
 [*] Average Score: 62.3
 ```
 
-[0]. [An introduction to Deep Q-Learning: let’s play Doom](https://medium.freecodecamp.org/an-introduction-to-deep-q-learning-lets-play-doom-54d02d8017d8)<br/>
-[1]. [Deep Q learning with Doom - Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/DQN%20Doom/Deep%20Q%20learning%20with%20Doom.ipynb)
 
-## Policy Gradients
+Atari Space Invaders
+--------------------
+[to be done]
+
+
+[0]. [An introduction to Deep Q-Learning: let’s play Doom](https://medium.freecodecamp.org/an-introduction-to-deep-q-learning-lets-play-doom-54d02d8017d8)<br/>
+[1]. [Deep Q learning with Doom - Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/DQN%20Doom/Deep%20Q%20learning%20with%20Doom.ipynb)<br/>
+[2]. [Deep Q Learning with Atari Space Invaders](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/DQN/Space%20Invaders/DQN%20Atari%20Space%20Invaders.ipynb)
+
+
+Policy Gradients
+================
 
 <div align=center>
 	<img width="500" src="imgs/policy_gradients.png" alt="Policy Gradients">
 </div>
 
-**Play CartPole Game**
+CartPole Game
+-------------
 
 <div align=center>
 	<img src="imgs/play_cartpole.gif" alt="Play CartPole Game">
@@ -145,11 +196,36 @@ Max reward so far: 111837.0
 [*] Model Saved: ./model/model.ckpt
 ```
 
+
+Doom Deathmatch
+---------------
+[to be done]
+
+
+
 [0]. [An introduction to Policy Gradients with Cartpole and Doom](https://medium.freecodecamp.org/an-introduction-to-policy-gradients-with-cartpole-and-doom-495b5ef2207f)<br/>
 [1]. [Cartpole: REINFORCE Monte Carlo Policy Gradients - Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Policy%20Gradients/Cartpole/Cartpole%20REINFORCE%20Monte%20Carlo%20Policy%20Gradients.ipynb)<br/>
-[2]. [Deep Reinforcement Learning: Pong from Pixels](http://karpathy.github.io/2016/05/31/rl/)
+[2]. [Doom-Deathmatch: REINFORCE Monte Carlo Policy gradients - Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Policy%20Gradients/Doom%20Deathmatch/Doom-deathmatch%20REINFORCE%20Monte%20Carlo%20Policy%20gradients.ipynb)<br/>
+[3]. [Deep Reinforcement Learning: Pong from Pixels](http://karpathy.github.io/2016/05/31/rl/)
 
-## AlphaGoZero Introduction
+
+Advantage Actor Critic
+======================
+[to be done]
+
+
+Asynchronous Advantage Actor Critic
+===================================
+[to be done]
+
+
+Proximal Policy Optimization
+============================
+[to be done]
+
+
+AlphaGoZero Introduction
+========================
 
 这个是我通过阅读 AlphaGo Zero 的文献，以及结合网路上相关的一些文章，将这些内容通过自己的理解整合到这一个PPT中，用来在组会上简单的介绍 AlphaGo Zero 背后的方法和原理给同学和老师，同时也思考如何将其结合到其他领域。当然，其中也不仅仅包括 AlphaGo Zero 的内容，也有我最近看的另外一篇文章，他们的研究团队运用类似的方法来解魔方。[[pdf]](AlphaGoZero_Intruduction/alphago_zero_introduction.pdf)
 
@@ -164,9 +240,12 @@ Max reward so far: 111837.0
 [3]. [Mastering the game of Go without Human Knowledge](https://deepmind.com/research/publications/mastering-game-go-without-human-knowledge/)
 
 
-## Monte Carlo Tree Search
+Monte Carlo Tree Search
+=======================
 
-**Gomoku**
+Gomoku
+------
+
 <div align=center>
 	<img width="400" height="400" src="imgs/mcts_gomoku.png" alt="pdf">
 </div>
@@ -176,7 +255,10 @@ MCTS vs Random Player [[code]](MCTS/MCTS_Gomoku.py). Another MCTS on Tic Tac Toe
 [0]. [mcts.ai](http://mcts.ai/code/python.html)<br/>
 [1]. [Introduction to Monte Carlo Tree Search](https://www.caktusgroup.com/blog/2015/09/24/introduction-monte-carlo-tree-search-1/)
 
-## AlphaGomoku
+
+AlphaGomoku
+===========
+
 使用AlphaGo Zero的方法实现的一个五子棋AI。
 
 下图是自我博弈训练 3000 局棋后，与人类选手对局的结果，已经很难下赢了。
