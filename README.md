@@ -85,8 +85,18 @@ players draw rate: 0.09528
 
 Taxi v2
 -------
-[to be done]
 
+<div align=center>
+	<img width="93" height="133" src="imgs/taxi1.png" alt="Taxi v2">
+	<img width="93" height="133" src="imgs/taxi2.png" alt="Taxi v2">
+	<img width="93" height="133" src="imgs/taxi3.png" alt="Taxi v2">
+	<img width="93" height="133" src="imgs/taxi4.png" alt="Taxi v2">
+	<img width="93" height="133" src="imgs/taxi5.png" alt="Taxi v2">
+	<img width="93" height="133" src="imgs/taxi6.png" alt="Taxi v2">
+	<img width="93" height="133" src="imgs/taxi7.png" alt="Taxi v2">
+</div>
+
+基于 `Q-Learning` 玩 `Taxi v2` 游戏：[[code]](QLearning/QLearning_Taxi_v2.py)
 
 
 [0]. [Diving deeper into Reinforcement Learning with Q-Learning](https://medium.freecodecamp.org/diving-deeper-into-reinforcement-learning-with-q-learning-c18d0db58efe)<br/>
