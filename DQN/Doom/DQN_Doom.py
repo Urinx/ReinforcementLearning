@@ -5,7 +5,6 @@ import random
 import time
 from skimage import transform
 from collections import deque
-import matplotlib.pyplot as plt
 
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'

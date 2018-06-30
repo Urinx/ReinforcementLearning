@@ -3,7 +3,7 @@ Reinforcement Learning
 
 Reinforcing Your Learning of Reinforcement Learning.
 
-这个是我在学习强化学习的过程中的一些记录，以及写的一些代码。建立这个Github项目主要是可以和大家一起相互学习和交流，也同时方便其他人寻找强化学习方面的资料。我为什么学习强化学习，主要是想把 AlphaZero 的那套方法（结合深度学习的蒙特卡洛树搜索）用在 RNA 分子结构预测上，但是具体怎么落地现在我也不知道。
+这个是我在学习强化学习的过程中的一些记录，以及写的一些代码。建立这个Github项目主要是可以和大家一起相互学习和交流，也同时方便其他人寻找强化学习方面的资料。我为什么学习强化学习，主要是想把 AlphaZero 的那套方法（结合深度学习的蒙特卡洛树搜索）用在 RNA 分子结构预测上，目前已经做了一些尝试，但没有很好的结果。
 
 首先看的书是 Richard S. Sutton 和 Andrew G. Barto 的 [Reinforcement Learning: An Introduction (Second edition)](http://incompleteideas.net/book/bookdraft2017nov5.pdf)。
 
@@ -17,17 +17,17 @@ Table of contents
 	* [Frozen Lake Game](#frozen-lake-game)
 	* [Tic Tac Toe](#tic-tac-toe)
 	* [Taxi v2](#taxi-v2)
-* [Deep Q-Learning Network](#deep-q-Learning-network)
+* [Deep Q-Learning Network (DQN)](#deep-q-Learning-network)
 	* [Doom Game](#doom-game)
 	* [Atari Space Invaders](#atari-space-invaders)
-* [Policy Gradients](#policy-gradients)
+* [Policy Gradients (PG)](#policy-gradients)
 	* [CartPole Game](#cartPole-game)
 	* [Doom Deathmatch](#doom-deathmatch)
 * [Advantage Actor Critic (A2C)](#advantage-actor-critic)
 * [Asynchronous Advantage Actor Critic (A3C)](#asynchronous-advantage-actor-critic)
 * [Proximal Policy Optimization (PPO)](#proximal-policy-optimization)
 * [AlphaGoZero Introduction](#alphagozero-introduction)
-* [Monte Carlo Tree Search](#monte-carlo-tree-search)
+* [Monte Carlo Tree Search (MCTS)](#monte-carlo-tree-search)
 	* [Gomoku](#gomoku)
 * [AlphaGomoku](#alphagomoku)
 
@@ -45,7 +45,7 @@ Frozen Lake Game
 	<img width="300" height="300" src="imgs/frozenlake.png" alt="Frozen Lake Game">
 </div>
 
-基于 `Q-Learning` 玩 Frozen Lake 游戏：[[code]](QLearning/QLearning_FrozenLake.py)
+基于 `Q-Learning` 玩 `Frozen Lake` 游戏：[[code]](QLearning/QLearning_FrozenLake.py)
 
 
 Tic Tac Toe
@@ -149,7 +149,7 @@ Atari Space Invaders
 --------------------
 
 <div align=center>
-	<img src="imgs/play_atari_space_invaders.gif" alt="Atari Space Invaders">
+	<img width="427" height="530" src="imgs/play_atari_space_invaders.gif" alt="Atari Space Invaders">
 </div>
 
 游戏环境使用的是 [Gym Retro](https://github.com/openai/retro) ，神经网络见下图。[[code]](DQN/Atari_Space_Invaders/DQN_Atari_Space_Invaders.py)
@@ -228,8 +228,25 @@ Max reward so far: 111837.0
 
 Doom Deathmatch
 ---------------
-[to be done]
 
+<div align=center>
+	<img src="imgs/play_doom_deathmatch.gif" alt="play Doom Deathmatch">
+</div>
+
+神经网络如下图。[[code]](PG/Cartpole/PG_Cartpole.py)
+
+![](imgs/pg_doom_deathmatch.png)
+
+训练 5000 局后结果如下：
+
+![]()
+![]()
+
+```
+
+```
+
+[to be done]
 
 
 [0]. [An introduction to Policy Gradients with Cartpole and Doom](https://medium.freecodecamp.org/an-introduction-to-policy-gradients-with-cartpole-and-doom-495b5ef2207f)<br/>

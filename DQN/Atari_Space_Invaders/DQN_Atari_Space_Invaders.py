@@ -48,7 +48,7 @@ def preprocess_frame(frame):
     gray = rgb2gray(frame)
     cropped_frame = gray[8:-12, 4:-12]
     normalized_frame = cropped_frame / 255.0
-    preprocessed_frame = transform.resize(cropped_frame, frame_size)
+    preprocessed_frame = transform.resize(normalized_frame, frame_size)
     return preprocessed_frame
 
 def stack_frames(state, is_new_episode=False):
@@ -340,18 +340,3 @@ if __name__ == '__main__':
         play()
     elif sys.argv[1] == '--test':
         test_environment()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
