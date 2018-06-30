@@ -233,7 +233,7 @@ Doom Deathmatch
 	<img src="imgs/play_doom_deathmatch.gif" alt="play Doom Deathmatch">
 </div>
 
-神经网络如下图。[[code]](PG/Cartpole/PG_Cartpole.py)
+神经网络如下图。[[code]](PG/Doom-Deathmatch/PG_Doom_Deathmatch.py)
 
 ![](imgs/pg_doom_deathmatch.png)
 
