@@ -109,6 +109,8 @@ Deep Q-Learning Network
 	<img width="400" height="300" src="imgs/DQN.png" alt="Deep Q-Learning Network">
 </div>
 
+![](imgs/DQN2.png)
+
 **weights updation:**
 
 ![](imgs/DQN_loss.png)
@@ -120,7 +122,7 @@ Doom Game
 	<img src="imgs/play_doom.gif" alt="play Doom">
 </div>
 
-游戏环境这里使用的是 [ViZDoom](http://vizdoom.cs.put.edu.pl) ，神经网络是三层的卷积网络。[[code]](DQN_Doom/DQN_Doom.py)
+游戏环境这里使用的是 [ViZDoom](http://vizdoom.cs.put.edu.pl) ，神经网络是三层的卷积网络。[[code]](DQN/Doom/DQN_Doom.py)
 
 ![DQN neural network](imgs/DQN_neural_network.png)
 
@@ -145,6 +147,23 @@ Episode 9 Score: 61.0
 
 Atari Space Invaders
 --------------------
+
+<div align=center>
+	<img src="imgs/play_atari_space_invaders.gif" alt="Atari Space Invaders">
+</div>
+
+游戏环境使用的是 [Gym Retro](https://github.com/openai/retro) ，神经网络见下图。[[code]](DQN/Atari_Space_Invaders/DQN_Atari_Space_Invaders.py)
+
+![DQN neural network](imgs/DQN_neural_network2.png)
+
+训练大约 xxx 局后结果如下：
+
+![Doom loss]()
+
+```
+
+```
+
 [to be done]
 
 
@@ -168,7 +187,7 @@ CartPole Game
 	<img src="imgs/play_cartpole.gif" alt="Play CartPole Game">
 </div>
 
-其中，Policy Gradient 神经网络如下图。[[code]](Policy_Gradients/PG_Cartpole.py)
+其中，Policy Gradient 神经网络如下图。[[code]](PG/Cartpole/PG_Cartpole.py)
 
 ![Policy Gradient Network](imgs/pg_network.png)
 
