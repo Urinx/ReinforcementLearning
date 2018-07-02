@@ -156,15 +156,25 @@ Atari Space Invaders
 
 ![DQN neural network](imgs/DQN_neural_network2.png)
 
-训练大约 xxx 局后结果如下：
-
-![Doom loss]()
+训练大约 25 局后结果如下：
 
 ```
-
+[*] Episode: 11, total reward: 120.0, explore p: 0.7587, train loss: 0.0127
+[*] Episode: 12, total reward: 80.0, explore p: 0.7495, train loss: 0.0194
+[*] Episode: 13, total reward: 110.0, explore p: 0.7409, train loss: 0.0037
+[*] Episode: 14, total reward: 410.0, explore p: 0.7233, train loss: 0.0004
+[*] Episode: 15, total reward: 240.0, explore p: 0.7019, train loss: 0.0223
+[*] Episode: 16, total reward: 230.0, explore p: 0.6813, train loss: 0.0535
+[*] Episode: 17, total reward: 315.0, explore p: 0.6606, train loss: 9.7144
+[*] Episode: 18, total reward: 140.0, explore p: 0.6455, train loss: 0.0022
+[*] Episode: 19, total reward: 310.0, explore p: 0.6266, train loss: 1.5386
+[*] Episode: 20, total reward: 200.0, explore p: 0.6114, train loss: 1.5545
+[*] Episode: 21, total reward: 65.0, explore p: 0.6044, train loss: 0.0042
+[*] Episode: 22, total reward: 210.0, explore p: 0.5895, train loss: 0.0161
+[*] Episode: 23, total reward: 155.0, explore p: 0.5778, train loss: 0.0006
+[*] Episode: 24, total reward: 105.0, explore p: 0.5665, train loss: 0.0016
+[*] Episode: 25, total reward: 425.0, explore p: 0.5505, train loss: 0.0063
 ```
-
-[to be done]
 
 
 [0]. [An introduction to Deep Q-Learning: let’s play Doom](https://medium.freecodecamp.org/an-introduction-to-deep-q-learning-lets-play-doom-54d02d8017d8)<br/>
