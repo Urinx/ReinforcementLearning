@@ -3,7 +3,7 @@ Reinforcement Learning
 
 Reinforcing Your Learning of Reinforcement Learning.
 
-这个是我在学习强化学习的过程中的一些记录，以及写的一些代码。建立这个Github项目主要是可以和大家一起相互学习和交流，也同时方便其他人寻找强化学习方面的资料。我为什么学习强化学习，主要是想把 AlphaZero 的那套方法（结合深度学习的蒙特卡洛树搜索）用在 RNA 分子结构预测上，目前已经做了一些尝试，但没有很好的结果。
+这个是我在学习强化学习的过程中的一些记录，以及写的一些代码。建立这个Github项目主要是可以和大家一起相互学习和交流，也同时方便其他人寻找强化学习方面的资料。我为什么学习强化学习，主要是想把 AlphaZero 的那套方法（结合深度学习的蒙特卡洛树搜索）用在 RNA 分子结构预测上，目前已经做了一些尝试，比如寻找 RNA 分子的二级结构折叠路径。
 
 首先看的书是 Richard S. Sutton 和 Andrew G. Barto 的 [Reinforcement Learning: An Introduction (Second edition)](http://incompleteideas.net/book/bookdraft2017nov5.pdf)。
 
@@ -30,6 +30,7 @@ Table of contents
 * [Monte Carlo Tree Search (MCTS)](#monte-carlo-tree-search)
 	* [Gomoku](#gomoku)
 * [AlphaGomoku](#alphagomoku)
+* [RNA Folding Path](#rna-folding-path)
 
 
 Q-Learning
@@ -99,7 +100,7 @@ Taxi v2
 
 
 [0]. [Diving deeper into Reinforcement Learning with Q-Learning](https://medium.freecodecamp.org/diving-deeper-into-reinforcement-learning-with-q-learning-c18d0db58efe)<br/>
-[1]. [Q* Learning with FrozenLake - Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Q%20learning/Q%20Learning%20with%20FrozenLake.ipynb)<br/>
+[1]. [Q* Learning with FrozenLake - Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Q%20learning/FrozenLake/Q%20Learning%20with%20FrozenLake.ipynb)<br/>
 [2]. [Q* Learning with OpenAI Taxi-v2 - Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Q%20learning/Taxi-v2/Q%20Learning%20with%20OpenAI%20Taxi-v2%20video%20version.ipynb)
 
 Deep Q-Learning Network
@@ -415,3 +416,10 @@ Epoch 1/1
 [3]. [28 天自制你的 AlphaGo (6) : 蒙特卡洛树搜索（MCTS）基础](https://zhuanlan.zhihu.com/p/25345778)<br/>
 [4]. [AlphaZero实战：从零学下五子棋（附代码）](https://zhuanlan.zhihu.com/p/32089487)<br/>
 [5]. [Github: junxiaosong/AlphaZero_Gomoku](https://github.com/junxiaosong/AlphaZero_Gomoku)
+
+
+RNA Folding Path
+================
+
+使用深度强化学习来学习 RNA 分子的二级结构折叠路径。具体说明这里就不再重复了，请参见这里：[[link]](RNA_Secondary_Structure_Folding_Path/)
+
