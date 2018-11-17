@@ -20,6 +20,8 @@ Table of contents
 * [Deep Q-Learning Network (DQN)](#deep-q-Learning-network)
 	* [Doom Game](#doom-game)
 	* [Atari Space Invaders](#atari-space-invaders)
+* [Dueling Double DQN & Prioritized Experience Replay](#dueling-double-dqn-and-prioritized-experience-replay)
+	* [Doom Deadly Corridor](#doom-deadly-corridor)
 * [Policy Gradients (PG)](#policy-gradients)
 	* [CartPole Game](#cartPole-game)
 	* [Doom Deathmatch](#doom-deathmatch)
@@ -182,6 +184,48 @@ Atari Space Invaders
 [1]. [Deep Q learning with Doom - Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/DQN%20Doom/Deep%20Q%20learning%20with%20Doom.ipynb)<br/>
 [2]. [Deep Q Learning with Atari Space Invaders](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/DQN/Space%20Invaders/DQN%20Atari%20Space%20Invaders.ipynb)<br/>
 [3]. [Atari 2600 VCS ROM Collection](http://www.atarimania.com/rom_collection_archive_atari_2600_roms.html)
+
+
+Dueling Double DQN and Prioritized Experience Replay
+====================================================
+
+Four improvements in Deep Q Learning:
+* Fixed Q-targets
+![Fixed Q-targets](imgs/fixed_q_targets.png)
+* Double DQN
+![Double DQN](imgs/double_DQN.png)
+* Dueling DQN
+![Dueling DQN](imgs/dueling_DQN1.png)
+* Prioritized Experience Replay
+<div align=center>
+	<img height="400" src="imgs/PER.png" alt="PER">
+</div>
+
+Doom Deadly Corridor
+--------------------
+
+<div align=center>
+	<img src="imgs/play_doom_deadly_corridor.gif" alt="play Doom Deadly Corridor">
+</div>
+
+其中，Dueling DQN 的神经网络如下图: [[code]](DDDQN/Doom-Deadly-Corridor/.py)
+
+![Dueling DQN](imgs/dueling_DQN2.png)
+
+Prioritized Experience Replay 采用 SumTree 的方法:
+
+![SumTree](imgs/sumtree.png)
+
+训练大约 xxx 轮后结果如下：
+
+![]()
+
+```
+```
+
+[0]. [Improvements in Deep Q Learning: Dueling Double DQN, Prioritized Experience Replay, and fixed Q-targets](https://medium.freecodecamp.org/improvements-in-deep-q-learning-dueling-double-dqn-prioritized-experience-replay-and-fixed-58b130cc5682)
+[1]. [Let’s make a DQN: Double Learning and Prioritized Experience Replay](https://jaromiru.com/2016/11/07/lets-make-a-dqn-double-learning-and-prioritized-experience-replay/)
+[2]. [Double Dueling Deep Q Learning with Prioritized Experience Replay - Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Dueling%20Double%20DQN%20with%20PER%20and%20fixed-q%20targets/Dueling%20Deep%20Q%20Learning%20with%20Doom%20(%2B%20double%20DQNs%20and%20Prioritized%20Experience%20Replay).ipynb)
 
 
 Policy Gradients

@@ -110,7 +110,7 @@ class Residual_CNN(NetworkModel):
 
         model = Model(inputs=main_input, outputs=[vh, ph])
         model.compile(
-        	loss=['mean_squared_error', 'categorical_crossentropy']，
+        	loss=['mean_squared_error', 'categorical_crossentropy'],
             optimizer=SGD(lr=self.learning_rate, momentum=self.momentum)
             )
 
