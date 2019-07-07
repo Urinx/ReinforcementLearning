@@ -33,6 +33,7 @@ Table of contents
 	* [Gomoku](#gomoku)
 * [AlphaGomoku](#alphagomoku)
 * [RNA Folding Path](#rna-folding-path)
+* [Atari Game Roms](#atari-game-roms)
 
 
 Q-Learning
@@ -208,7 +209,7 @@ Doom Deadly Corridor
 	<img src="imgs/play_doom_deadly_corridor.gif" alt="play Doom Deadly Corridor">
 </div>
 
-其中，Dueling DQN 的神经网络如下图: [[code]](DDDQN/Doom-Deadly-Corridor/.py)
+其中，Dueling DQN 的神经网络如下图: [[code]](DDDQN/Doom-Deadly-Corridor/)
 
 ![Dueling DQN](imgs/dueling_DQN2.png)
 
@@ -216,15 +217,8 @@ Prioritized Experience Replay 采用 SumTree 的方法:
 
 ![SumTree](imgs/sumtree.png)
 
-训练大约 xxx 轮后结果如下：
-
-![]()
-
-```
-```
-
-[0]. [Improvements in Deep Q Learning: Dueling Double DQN, Prioritized Experience Replay, and fixed Q-targets](https://medium.freecodecamp.org/improvements-in-deep-q-learning-dueling-double-dqn-prioritized-experience-replay-and-fixed-58b130cc5682)
-[1]. [Let’s make a DQN: Double Learning and Prioritized Experience Replay](https://jaromiru.com/2016/11/07/lets-make-a-dqn-double-learning-and-prioritized-experience-replay/)
+[0]. [Improvements in Deep Q Learning: Dueling Double DQN, Prioritized Experience Replay, and fixed Q-targets](https://medium.freecodecamp.org/improvements-in-deep-q-learning-dueling-double-dqn-prioritized-experience-replay-and-fixed-58b130cc5682)<br/>
+[1]. [Let’s make a DQN: Double Learning and Prioritized Experience Replay](https://jaromiru.com/2016/11/07/lets-make-a-dqn-double-learning-and-prioritized-experience-replay/)<br/>
 [2]. [Double Dueling Deep Q Learning with Prioritized Experience Replay - Notebook](https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Dueling%20Double%20DQN%20with%20PER%20and%20fixed-q%20targets/Dueling%20Deep%20Q%20Learning%20with%20Doom%20(%2B%20double%20DQNs%20and%20Prioritized%20Experience%20Replay).ipynb)
 
 
@@ -242,7 +236,7 @@ CartPole Game
 	<img src="imgs/play_cartpole.gif" alt="Play CartPole Game">
 </div>
 
-其中，Policy Gradient 神经网络如下图。[[code]](PG/Cartpole/PG_Cartpole.py)
+其中，Policy Gradient 神经网络如下图。
 
 ![Policy Gradient Network](imgs/pg_network.png)
 
@@ -280,6 +274,8 @@ Max reward so far: 111837.0
 [*] Model Saved: ./model/model.ckpt
 ```
 
+具体代码请参见：[[tensorflow]](PG/Cartpole_tensorflow/PG_Cartpole.py) [[pytorch]](PG/Cartpole_pytorch/PG_Cartpole.py)
+
 
 Doom Deathmatch
 ---------------
@@ -288,20 +284,9 @@ Doom Deathmatch
 	<img src="imgs/play_doom_deathmatch.gif" alt="play Doom Deathmatch">
 </div>
 
-神经网络如下图。[[code]](PG/Doom-Deathmatch/PG_Doom_Deathmatch.py)
-
 ![](imgs/pg_doom_deathmatch.png)
 
-训练 5000 局后结果如下：
-
-![]()
-![]()
-
-```
-
-```
-
-[to be done]
+神经网络如上，具体代码请参见：[[code]](PG/Doom-Deathmatch/PG_Doom_Deathmatch.py)
 
 
 [0]. [An introduction to Policy Gradients with Cartpole and Doom](https://medium.freecodecamp.org/an-introduction-to-policy-gradients-with-cartpole-and-doom-495b5ef2207f)<br/>
@@ -467,3 +452,7 @@ RNA Folding Path
 
 使用深度强化学习来学习 RNA 分子的二级结构折叠路径。具体说明这里就不再重复了，请参见这里：[[link]](RNA_Secondary_Structure_Folding_Path/)
 
+Atari Game Roms
+===============
+
+这里有一些 Atari 游戏的 Rom，可以导入到 retro 环境中，方便进行游戏。[[link]](Roms/)
