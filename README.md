@@ -28,6 +28,7 @@ Table of contents
 * [Advantage Actor Critic (A2C)](#advantage-actor-critic)
 * [Asynchronous Advantage Actor Critic (A3C)](#asynchronous-advantage-actor-critic)
 * [Proximal Policy Optimization (PPO)](#proximal-policy-optimization)
+	* [Half Cheetah](#half-cheetah)
 * [AlphaGoZero Introduction](#alphagozero-introduction)
 * [Monte Carlo Tree Search (MCTS)](#monte-carlo-tree-search)
 	* [Gomoku](#gomoku)
@@ -307,7 +308,42 @@ Asynchronous Advantage Actor Critic
 
 Proximal Policy Optimization
 ============================
-[to be done]
+
+<div align=center>
+	<img src="imgs/ppo_algorithm.svg" alt="PPO Algorithm">
+</div>
+
+Half Cheetah
+------------
+
+<div align=center>
+	<img src="imgs/halfcheetah.gif" alt="play HalfCheetah">
+</div>
+
+
+训练 500 epoch 后：
+```
+----------------------------------------
+Epoch: 499
+TotalEnvInteracts: 2000000
+EpRet:        585.4069  470.6009(min) 644.4069(max) 67.6205(std)
+EpLen:        1000.0000
+VVals:        46.3796   23.6165(min) 50.2677(max) 2.5903(std)
+LossPi:       -0.0172
+LossV:        506.2033
+DeltaLossPi:  -0.0172
+DeltaLossV:   -32.9680
+Entropy:      5.5010
+KL:           0.0188
+ClipFrac:     0.1937
+StopIter:     6.0000
+Time: 27175.5427s
+----------------------------------------
+```
+
+具体代码请参见：[[code]](PPO/HalfCheetah/PPO_HalfCheetah.py)
+
+[0]. [OpenAI Spinning Up - Proximal Policy Optimization](https://spinningup.openai.com/en/latest/algorithms/ppo.html)
 
 
 AlphaGoZero Introduction
