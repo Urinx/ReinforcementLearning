@@ -230,6 +230,10 @@ Policy Gradients
 	<img width="500" src="imgs/policy_gradients.png" alt="Policy Gradients">
 </div>
 
+<div align=center>
+	<img src="imgs/pg_algorithm.svg" alt="PG Algorithm">
+</div>
+
 CartPole Game
 -------------
 
