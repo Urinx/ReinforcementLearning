@@ -29,6 +29,8 @@ Table of contents
 * [Asynchronous Advantage Actor Critic (A3C)](#asynchronous-advantage-actor-critic)
 * [Proximal Policy Optimization (PPO)](#proximal-policy-optimization)
 	* [Half Cheetah](#half-cheetah)
+* [Deep Deterministic Policy Gradient (DDPG)](#deep-deterministic-policy-gradient)
+	* [Ant](#ant)
 * [AlphaGoZero Introduction](#alphagozero-introduction)
 * [Monte Carlo Tree Search (MCTS)](#monte-carlo-tree-search)
 	* [Gomoku](#gomoku)
@@ -348,6 +350,56 @@ Time: 27175.5427s
 具体代码请参见：[[code]](PPO/HalfCheetah/PPO_HalfCheetah.py)
 
 [0]. [OpenAI Spinning Up - Proximal Policy Optimization](https://spinningup.openai.com/en/latest/algorithms/ppo.html)
+
+Deep Deterministic Policy Gradient
+==================================
+
+<div align=center>
+	<img src="imgs/ddpg_algorithm.svg" alt="DDPG Algorithm">
+</div>
+
+Ant
+---
+
+<div align=center>
+	<img src="imgs/ant.gif" alt="Ant-v2">
+</div>
+
+由于训练不稳定，在第 225 epoch 取得最大平均 reward：
+```
+----------------------------------------
+Epoch: 225
+TotalEnvInteracts: 1130000
+EpRet:        1358.9755 920.2474(min) 1608.4678(max) 238.5494(std)
+EpLen:        992.0000
+TestEpRet:    1101.4177 479.9980(min) 1520.0907(max) 415.7242(std)
+TestEpLen:    873.2000
+QVals:        136.3016 -112.4969(min) 572.5870(max) 36.0409(std)
+LossPi:       -138.1635
+LossQ:        7.0895
+Time: 28183.4149s
+----------------------------------------
+```
+
+随着时间的增长，平均 reward 波动较大，此起彼伏，训练 365 epoch 后：
+```
+----------------------------------------
+Epoch: 365
+TotalEnvInteracts: 1830000
+EpRet:        -1250.8838 -2355.5800(min) -10.4664(max) 810.3868(std)
+EpLen:        723.5714
+TestEpRet:    -1241.4192 -2211.0383(min) -884.2655(max) 342.6774(std)
+TestEpLen:    1000.0000
+QVals:        407.9140 -116.6802(min) 684.3555(max) 76.7627(std)
+LossPi:       -413.1655
+LossQ:        61.5379
+Time: 50710.5035s
+----------------------------------------
+```
+
+具体代码请参见：[[code]](DDPG/Ant/DDPG_Ant.py)
+
+[0]. [OpenAI Spinning Up - Deep Deterministic Policy Gradient](https://spinningup.openai.com/en/latest/algorithms/ddpg.html)
 
 
 AlphaGoZero Introduction
